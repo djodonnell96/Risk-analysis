@@ -27,7 +27,7 @@ class Army:
         if (self.size < 1) or (self.size > 3): #Check for valid army size"
             print("Please enter an army size between 1 and 3")
         else :#Create an army(array) of s soldiers"
-            for x in range(self.size):
+            for x in range(self.size): # check indexing - I might have thought of this is 1 indexing
                 newSoldier = Soldier()
                 self.thisArmy.append(newSoldier)
 
