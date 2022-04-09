@@ -24,14 +24,14 @@ class Battle:
         self.defender.sort()
 
         # compare armies and set flags to defeated if necessary
-        x = max(attacker.size,defender.size)
+        x = max(self.attacker.size,self.defender.size)
 
         # Comparing rolls for each soldier. Defender wins ties.
         for i in range(x):
-            if defender.thisArmy[i].roll >= attacker.thisArmy[i].roll:
-                attacker.thisArmy[i].defeated()
-            elif defender.thisArmy[i].roll < attacker.thisArmy[i].roll:
-                defender.thisArmy[i].defeated()
+            if self.defender.thisArmy[i].roll >= self.attacker.thisArmy[i].roll:
+                self.attacker.thisArmy[i].defeated()
+            elif self.defender.thisArmy[i].roll < self.attacker.thisArmy[i].roll:
+                self.defender.thisArmy[i].defeated()
 
     def armiesInfo(self):
         print("Attacker Status:")
