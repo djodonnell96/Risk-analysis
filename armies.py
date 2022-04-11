@@ -23,13 +23,12 @@ class Soldier:
         print(self.roll, " ", self.active)
 
 class Army:
-    thisArmy = []
     
     #Constructing the army. Checks if valid size, if valid then creates the army
-    def __init__(self,s = None):
+    def __init__(self, s = None):
+        self.thisArmy = []
 
         # Checking if we are to create an empty army or an army with soldier
-
         if s == None:
             return
         else:
