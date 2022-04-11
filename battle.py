@@ -42,18 +42,20 @@ class Battle:
         self.defender.armyStatus()
 
 
-attacker = armies.Army(3)
-print("Attackers:")
-for s in attacker.thisArmy:
-    print(s)
+# Testing code below
 
-defender = armies.Army(2)
-print("Defenders:")
-for s in defender.thisArmy:
-    print(s)
-
-newBattle = Battle(attacker,defender)
-
-newBattle.engage()
-
-newBattle.armiesInfo()
+##attacker = armies.Army(3)
+##print("Attackers:")
+##for s in attacker.thisArmy:
+##    print(s)
+##
+##defender = armies.Army(2)
+##print("Defenders:")
+##for s in defender.thisArmy:
+##    print(s)
+##
+##newBattle = Battle(attacker,defender)
+##
+##newBattle.engage()
+##
+##newBattle.armiesInfo()
