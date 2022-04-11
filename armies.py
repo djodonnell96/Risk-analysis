@@ -2,10 +2,11 @@ import random
 from operator import attrgetter
 
 class Soldier:
-    active = True #Default status for a soldier"
+    active = True
     #A soldier makes up an army, and consists of their dice roll and a flag if they are active
     def __init__(self):
         roll = 0 #By default, hasn't rolled yet"
+        active = True #Default status for a soldier"
 
     
 
