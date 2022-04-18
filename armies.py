@@ -3,6 +3,7 @@ from operator import attrgetter
 
 class Soldier:
     active = True
+    roll = 0
     #A soldier makes up an army, and consists of their dice roll and a flag if they are active
     def __init__(self):
         roll = 0 #By default, hasn't rolled yet"
@@ -57,6 +58,11 @@ class Army:
     # sorting the armies by rolls highest to lowest
     def sort(self):
         self.thisArmy.sort(key=attrgetter('roll'),  reverse=True)
+
+    # Implementing defeated function for all soldiers in the army
+    def defeated(self):
+        for s in self.thisArmy:
+            s.defeated()
                 
         
         

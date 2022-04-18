@@ -1,3 +1,4 @@
+from pickle import FALSE
 import armies
 
 class Battle:
@@ -32,6 +33,11 @@ class Battle:
                 self.attacker.thisArmy[i].defeated()
             elif self.defender.thisArmy[i].roll < self.attacker.thisArmy[i].roll:
                 self.defender.thisArmy[i].defeated()
+
+        for soldier in self.attacker.thisArmy[:]:
+            if soldier.status == FALSE:
+                self.attacker.thisArmy.remove(soldier)
+
 
         
 
